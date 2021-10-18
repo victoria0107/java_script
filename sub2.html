@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>수업3</title>
+  </head>
+  <body>
+    <a href="./index.html">메인</a>
+    <a href="./min.html">수업1</a>
+    <a href="./sub1.html">수업2</a>
+    <a href="./sub3.html">수업4</a>
+
+    <h2>Loop&Array</h2>
+    <h2>workers_HTML작성</h2>
+    <ul>
+      <li>merry</li>
+      <li>alexko</li>
+      <li>minju</li>
+      <li>victoria</li>
+    </ul>
+    <script>
+      var workers = ['merry', 'alexko', 'minju', 'victoria'];
+    </script>
+    <h2>workers_Script</h2>
+    <ul>
+      <script>
+        var i = 0;
+        while (i < 4) {
+          document.write('<li>' + workers[i] + '</li>');
+          i = i + 1;
+        }
+      </script>
+    </ul>
+    <script>
+      var workers = ['merry', 'alexko', 'minju', 'minku'];
+    </script>
+    <h2>workers_Script_배열과 반복문을 섞어 만듬</h2>
+    <ul>
+      <script>
+        var i = 0;
+        while (i < workers.length) {
+          document.write(
+            '<li><a href="http://a.com/' +
+              workers[i] +
+              '">' +
+              workers[i] +
+              '</a></li>'
+          );
+          i = i + 1;
+        }
+      </script>
+    </ul>
+  </body>
+</html>
